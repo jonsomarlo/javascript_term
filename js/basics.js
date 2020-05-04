@@ -230,7 +230,8 @@ function enter_function_message( ) {
         newLine("  the data very seriously, this is why I do not agree".replace(/ /g,'\xa0'));
         newLine("  with sending the data outside of your own computer.".replace(/ /g,'\xa0'));
         newLine("  It is for this and for the anonymity of the messages,".replace(/ /g,'\xa0'));
-        newLine("  so I cannot commit to reply all messages received.".replace(/ /g,'\xa0'));
+        newLine("  that your message will never get out, and therefore".replace(/ /g,'\xa0'));
+        newLine("  I will not be able to reply.".replace(/ /g,'\xa0'));
     } else {
         newLine("  Don't you want to write anything? it's a shame.".replace(/ /g,'\xa0'));
     }
