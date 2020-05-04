@@ -28,6 +28,19 @@ if ( detectMob() ) {
     newLine(sadface());
     newLine(" ".replace(/ /g,'\xa0'));
     newLine(" ".replace(/ /g,'\xa0'));
+    newLine(" Since you can not enjoy my website, and spend one of".replace(/ /g,'\xa0'));
+    newLine(" the best times of the day, I will provide some links".replace(/ /g,'\xa0'));
+    newLine(" for you to hang out, although I warn you that it is".replace(/ /g,'\xa0'));
+    newLine(" not as rewarding as the use of my website, although".replace(/ /g,'\xa0'));
+    newLine(" it is not bad either.".replace(/ /g,'\xa0'));
+    newLine(" ".replace(/ /g,'\xa0'));
+    newLine(" Links:".replace(/ /g,'\xa0'));
+    newLine('\xa0\xa0\xa0- <a class="opengit" target="_blank" href="https://github.com/jonsomarlo">github: Jonso Marlo</a>');
+    newLine('\xa0\xa0\xa0- <a class="openlinked" target="_blank" href="https://www.linkedin.com/in/juan-martinez-41a4261a9/">linkeding: Juan Martinez</a>');
+    newLine('\xa0\xa0\xa0- <a class="open" target="_blank" href="anonymous/curriculum/curriculum_es.pdf">CV: Spanish</a>');
+    newLine('\xa0\xa0\xa0- <a class="open" target="_blank" href="anonymous/curriculum/curriculum_en.pdf">CV: English</a>');
+    newLine(" ".replace(/ /g,'\xa0'));
+    newLine(" ".replace(/ /g,'\xa0'));
 } else {
     newLine(" ".replace(/ /g,'\xa0'));
     newLine("  If you do not have a high knowledge of computers,".replace(/ /g,'\xa0'));
@@ -35,6 +48,11 @@ if ( detectMob() ) {
     newLine("  expert for some reason does not know how to use a".replace(/ /g,'\xa0'));
     newLine("  Linux command line, I would like to introduce my-".replace(/ /g,'\xa0'));
     newLine("  self to fill the vacancy of this \"computer expert\".".replace(/ /g,'\xa0'));
+    newLine(" ".replace(/ /g,'\xa0'));
+    newLine("  If you do not have any expert available, write".replace(/ /g,'\xa0'));
+    newLine("  'help' and press the 'enter' key, it will provide".replace(/ /g,'\xa0'));
+    newLine("  you with information so that you can see part of".replace(/ /g,'\xa0'));
+    newLine("  the information.".replace(/ /g,'\xa0'));
     newLine(" ".replace(/ /g,'\xa0'));
     newLine("  If you are interested in writing a message, you".replace(/ /g,'\xa0'));
     newLine("  can do it through the command \"message\".".replace(/ /g,'\xa0'));

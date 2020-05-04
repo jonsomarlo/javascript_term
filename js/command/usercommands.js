@@ -150,13 +150,19 @@ function exitCMD(command){
 /* =================================================================== HELP =*/
 function helpCMD(command){
     newLine(" - HELP ----------------------------------------------".replace(/ /g,'\xa0'));
-    newLine("  ".replace(/ /g,'\xa0'));
-    newLine("  If you are new to the subject of computers, in".replace(/ /g,'\xa0'));
-    newLine("  order to see all the information published, it is".replace(/ /g,'\xa0'));
-    newLine("  as simple as writing the following command:".replace(/ /g,'\xa0'));
-    newLine("  ".replace(/ /g,'\xa0'));
-    newLine('         <span class="prompt">anonymous-PC&nbsp;</span><span class="path">~</span><span class="dollar">&nbsp;$&nbsp;</span><span class="prev">cat */*.txt</span><span class="caret"></span><span class="next"></span>'.replace(/ /g,'\xa0'));
-    newLine("  ".replace(/ /g,'\xa0'));
+    newLine(" ".replace(/ /g,'\xa0'));
+    newLine(" Since you can not enjoy my website, and spend one of".replace(/ /g,'\xa0'));
+    newLine(" the best times of the day, I will provide some links".replace(/ /g,'\xa0'));
+    newLine(" for you to hang out, although I warn you that it is".replace(/ /g,'\xa0'));
+    newLine(" not as rewarding as the use of my website, although".replace(/ /g,'\xa0'));
+    newLine(" it is not bad either.".replace(/ /g,'\xa0'));
+    newLine(" ".replace(/ /g,'\xa0'));
+    newLine(" Links:".replace(/ /g,'\xa0'));
+    newLine('\xa0\xa0\xa0- <a class="opengit" target="_blank" href="https://github.com/jonsomarlo">github: Jonso Marlo</a>');
+    newLine('\xa0\xa0\xa0- <a class="openlinked" target="_blank" href="https://www.linkedin.com/in/juan-martinez-41a4261a9/">linkeding: Juan Martinez</a>');
+    newLine('\xa0\xa0\xa0- <a class="open" target="_blank" href="anonymous/curriculum/curriculum_es.pdf">CV: Spanish</a>');
+    newLine('\xa0\xa0\xa0- <a class="open" target="_blank" href="anonymous/curriculum/curriculum_en.pdf">CV: English</a>');
+    newLine(" ".replace(/ /g,'\xa0'));
     newLine(" -----------------------------------------------------".replace(/ /g,'\xa0'));
 }
 
