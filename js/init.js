@@ -41,6 +41,7 @@ if ( detectMob() ) {
     newLine('\xa0\xa0\xa0- <a class="open" target="_blank" href="anonymous/curriculum/curriculum_en.pdf">CV: English</a>');
     newLine(" ".replace(/ /g,'\xa0'));
     newLine(" ".replace(/ /g,'\xa0'));
+    shutup(true);
 } else {
     newLine(" ".replace(/ /g,'\xa0'));
     newLine("  If you do not have a high knowledge of computers,".replace(/ /g,'\xa0'));
