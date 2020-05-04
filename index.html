@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>INDEX</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <div id="command">
+                <div id="aux"></div>
+                <div id="terminal"></div>
+                <div id="input"><span class="prompt">anonymous-PC&nbsp;</span><span class="path">~</span><span class="dollar">&nbsp;$&nbsp;</span><span class="prev"></span><span class="caret"></span><span class="next"></span></div>
+            </div>
+            <div id="man" style="display:none">
+                <div class="content">
+                </div>
+                <div class="footer">Manual page <span id="page"></span>(1) (press h for help or q to quit) </div>
+            </div>
+            <div id="help" style="display:none">
+                <div class="content">
+                    <br>
+                    <h1>SUMMARY OF LESS COMMANDS</h1>
+                    <br>
+                    <p>
+                        Commands marked with * may be preceded by a number, N.<br>
+                        Notes in parentheses indicate the behavior if N is given.<br>
+                        A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+                    </p>
+
+                    <p>
+                        h  H                 Display this help.<br>
+                        q  :q  Q  :Q  ZZ     Exit.
+                    </p>
+                    <br>
+                    <hr>
+                    <br>
+                    <h1>LINE EDITING</h1>
+                    <br>
+                    <p>
+                        These keys can be used to edit text being entered<br>
+                        on the "command line" at the bottom of the screen.
+                    </p>
+
+                    <p>
+                        RightArrow ......... Move cursor right one character.<br>
+                        LeftArrow .......... Move cursor left one character.<br>
+                        BACKSPACE .......... Delete char to left of cursor.<br>
+                        DELETE ............. Delete char under cursor.<br>
+                        UpArrow ............ Retrieve previous command line.<br>
+                        DownArrow .......... Retrieve next command line.<br>
+                        TAB ................ Complete filename & cycle.<br>
+                    </p>
+                </div>
+                <div class="footer">HELP -- Press q when done </div>
+            </div>
+        </main>
+        <dir id="scripts">
+            <script type="text/javascript" src="js/basics.js"></script>
+            <script type="text/javascript" src="js/init.js"></script>
+
+            <script type="text/javascript" src="js/keyboard/backspace.js"></script>
+            <script type="text/javascript" src="js/keyboard/down.js"></script>
+            <script type="text/javascript" src="js/keyboard/enter.js"></script>
+            <script type="text/javascript" src="js/keyboard/left.js"></script>
+            <script type="text/javascript" src="js/keyboard/remove.js"></script>
+            <script type="text/javascript" src="js/keyboard/right.js"></script>
+            <script type="text/javascript" src="js/keyboard/tab.js"></script>
+            <script type="text/javascript" src="js/keyboard/up.js"></script>
+
+            <script type="text/javascript" src="js/var/dir.js"></script>
+            <script type="text/javascript" src="js/var/envar.js"></script>
+            <script type="text/javascript" src="js/var/blockcommands.js"></script>
+
+            <script type="text/javascript" src="js/command/usercommands.js"></script>
+            <script type="text/javascript" src="js/command/general.js"></script>
+        </div>
+    </body>
+</html>

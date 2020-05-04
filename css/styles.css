@@ -1,0 +1,162 @@
+*
+{
+    font-size: 12px;
+    font-family:monospace;
+    font-weight: bold;
+    color: white;
+}
+
+body
+{
+    background-color: black;
+    margin: 0;
+}
+
+div
+{
+    word-break: break-all;
+}
+
+::selection {
+    color: black;
+    background: rgba(255, 255, 255, 0.996);
+}
+
+.prompt
+{
+    color: indianred;
+}
+
+.prompt::selection {
+    color: white;
+    background: indianred;
+}
+
+.path
+{
+    color: khaki;
+}
+
+.path::selection {
+    color: black;
+    background: khaki;
+}
+
+.dollar
+{
+    color: white;
+}
+
+.prev
+{
+    color: white;
+}
+
+.caret
+{
+    color: white;
+}
+
+#input .caret
+{
+    color: black;
+    background-color: white;
+}
+
+#input .caret::selection {
+    color: white;
+    background: rgba(0, 0, 0, 0.996);;
+}
+
+.next
+{
+    color: white;
+}
+
+.folder
+{
+    color: DarkCyan;
+}
+
+.tmpfolder
+{
+    color: DarkCyan;
+    background-color: CornflowerBlue;
+}
+
+.open
+{
+    color: LightSalmon;
+}
+
+.opengit
+{
+    color: khaki;
+}
+
+.openlinked
+{
+    color: LightSteelBlue;
+}
+
+.infodoc
+{
+    color: DarkSeaGreen;
+}
+
+.warning
+{
+    color: green;
+}
+
+.quote
+{
+    color: black;
+    background-color: black;
+}
+
+.quote::selection {
+    color: black;
+    background: rgba(255, 255, 255, 0.996);
+}
+
+
+/* MAN & HELP*/
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+p, dt {
+    margin-left: 2em;
+}
+
+dt p {
+    margin-left: 0;
+}
+
+.footer {
+    color: black;
+    background: rgba(255, 255, 255, 0.996);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#man #page {
+    color: black;
+    background: rgba(255, 255, 255, 0.996);
+}
+
+#man #adright {
+    display: none;
+}
+
+#aux {
+    word-break: break-all;
+    max-width: 100%;
+}
