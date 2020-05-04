@@ -704,7 +704,7 @@ var root = {
                             'dir': '/home/anonymous/projects/javascript_term/',
                             'name': 'javascript_term.git',
                             'type': 'opengit',
-                            'url': 'https://github.com/jonsomarlo/javascript_term',
+                            'url': 'https://github.com/jonsomarlo/javascript_term/tree/v0.1',
                             'allow': 1,
                             'edit': 0,
                         }
