@@ -1,0 +1,8 @@
+Sitemap: https://juan-martinez-alons.herokuapp.com/
+
+User-agent: *
+Allow: /
+Disallow: /control/*
+Disallow: /location/*
+Disallow: /remote/*
+Disallow: /admin.php
