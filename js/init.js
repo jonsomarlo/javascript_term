@@ -50,19 +50,23 @@ if ( detectMob() ) {
     shutup(true);
 } else {
     newLine(" ".replace(/ /g,'\xa0'));
-    newLine("  If you do not have a high knowledge of computers,".replace(/ /g,'\xa0'));
-    newLine("  please call an computer expert. If this computer".replace(/ /g,'\xa0'));
-    newLine("  expert for some reason does not know how to use a".replace(/ /g,'\xa0'));
-    newLine("  Linux command line, I would like to introduce my-".replace(/ /g,'\xa0'));
-    newLine("  self to fill the vacancy of this \"computer expert\".".replace(/ /g,'\xa0'));
+    newLine("<span class=\"intro\">"+('          ._:""""""":_.           '+    " ").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('       .:" @@@@       @"".        '+    "  WELCOME TO MY SITE:").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('     ."    @@ \\@      /@  "       '+   " ").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('    :      @@ @@     @@@@   -     '+    "  If you do not have a high knowledge of computers,").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('   /       @@ \\@    @@ @@    \\    '+  "  please call an computer expert. If this computer").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('  :        |@\\ @@   /@ @@     .   '+   "  expert for some reason does not know how to use a").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('  ·         @@  @  @@  @      ·   '+    "  Linux command line, I would like to introduce my-").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('  :         ¡@@@@@@@@@:.      :   '+    "  self to fill the vacancy of this \"computer expert\".").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('  -  __     |@@@@@@@@@@|      ·   '+    " ").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('   \\@@@\\    |@@@@@@@@@@|     /    '+  "  If you do not have any expert available, write").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('    \\ "\\@   /@@@@@@@@@@|    -     '+  "  'help' and press the 'enter' key, it will provide").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('     :.   @@@@@@@@@@@@@!  .:      '+    "  you with information so that you can see part of").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('       " _  """"3@@@@@/,_"        '+    "  the information.").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('           "-._____.-"            '+    " ").replace(/ /g,'\xa0')+"</span>");
     newLine(" ".replace(/ /g,'\xa0'));
-    newLine("  If you do not have any expert available, write".replace(/ /g,'\xa0'));
-    newLine("  'help' and press the 'enter' key, it will provide".replace(/ /g,'\xa0'));
-    newLine("  you with information so that you can see part of".replace(/ /g,'\xa0'));
-    newLine("  the information.".replace(/ /g,'\xa0'));
-    newLine(" ".replace(/ /g,'\xa0'));
-    newLine("  If you are interested in writing a message, you".replace(/ /g,'\xa0'));
-    newLine("  can do it through the command \"message\".".replace(/ /g,'\xa0'));
+    newLine("<span class=\"intro\">"+("  If you are interested in writing a message, you can do it with the command \"message\".").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+("  If you want to contact me, please use Mail, Phone or Whatsapp.").replace(/ /g,'\xa0')+"</span>");
     newLine(" ".replace(/ /g,'\xa0'));
 }
 
