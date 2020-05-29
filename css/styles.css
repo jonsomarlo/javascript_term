@@ -228,6 +228,7 @@ li a
     width: 150px;
 
     text-decoration: none;
+    font-family:monospace;
     color: var(--main-text-color);
 }
 
