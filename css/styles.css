@@ -5,7 +5,7 @@ body
     --second-hd-color: LightGray;
 
     --main-nav-color: #222222; /* white;*/
-    --second-nav-color: LightGray;
+    --second-nav-color: white;
 
     --main-text-color: GhostWhite;
     --second-text-color: #222222;
@@ -13,12 +13,13 @@ body
     --main-tit-color: GhostWhite;
     --second-tit-color: #222222;
 
-
     display: block;
 
     width: 100%;
     height: 100%;
     margin: 0;
+
+    background-color: #444444;
 }
 
 header
@@ -200,40 +201,42 @@ main
     background-color: #111111;
 }
 
-ul
+#net-nav
 {
-    display: inline-block;
+    position: fixed;
 
     padding: 0;
     margin: 0;
+
+    z-index: 2;
     width: 100%;
 
     list-style: none;
-    background-color: var(--main-nav-color);
+    /* background-color: var(--main-nav-color); */
 }
 
-li
+#net-nav li
 {
-    float: left;
-
     text-align: center;
-    background-color: var(--main-nav-color);
-    color: var(--main-text-color);
 }
 
-li a
+#net-nav li a
 {
+    float: right;
     display: block;
-    padding: 10px;
-    width: 150px;
+
+    margin: 10px 10px;
+    padding: 5px 10px;
 
     text-decoration: none;
     font-family:monospace;
-    color: var(--main-text-color);
+    background-color: var(--second-nav-color);
+    color: var(--second-text-color);
+    border-radius: 20px;
 }
 
-li a:hover
+figure
 {
-    background-color: var(--second-hd-color);
-    color: var(--second-text-color);
+    margin: 0;
+    padding: 0;
 }
