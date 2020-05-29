@@ -1,13 +1,18 @@
 
 body
 {
-    --main-hd-color: Grey; /* white;*/
+    --main-hd-color: #222222; /* white;*/
     --second-hd-color: LightGray;
 
-    --main-text-color: GhostWhite;
-    --second-text-color: LightGray;
+    --main-nav-color: #222222; /* white;*/
+    --second-nav-color: LightGray;
 
-    background-color: red;
+    --main-text-color: GhostWhite;
+    --second-text-color: #222222;
+
+    --main-tit-color: GhostWhite;
+    --second-tit-color: #222222;
+
 
     display: block;
 
@@ -26,7 +31,7 @@ header
     margin: 0;
 
     width: 100%;
-    height: 50px;
+    height: 70px;
 
     -webkit-transition: .4s;
     transition: .4s;
@@ -41,7 +46,7 @@ svg{
 svg * {
     width: 100%;
     height: 100%;
-    fill: var(--main-text-color);
+    fill: var(--main-tit-color);
 }
 
 #header
@@ -50,6 +55,7 @@ svg * {
     display: flex;
 
     height: 100%;
+    margin-top: 10px;
 
     text-decoration: none;
 }
@@ -72,13 +78,13 @@ svg * {
 
 #title #name
 {
-    color:  var(--main-text-color);
+    color:  var(--main-tit-color);
     font-size: 30px;
 }
 
 #title #position
 {
-    color:  var(--main-text-color);
+    color:  var(--main-tit-color);
     font-size: 10px;
 }
 
@@ -88,6 +94,7 @@ svg * {
     display: flex;
 
     height: 100%;
+    margin-top: 10px;
 
     font-family:monospace;
     vertical-align: middle;
@@ -95,7 +102,7 @@ svg * {
 
 #mode .text
 {
-    color:  var(--main-text-color);
+    color:  var(--main-tit-color);
 
     float: right;
 
@@ -149,7 +156,7 @@ svg * {
 }
 
 input:checked + .slider {
-    background-color: var(--main-text-color);
+    background-color: var(--main-tit-color);
 }
 
 input:checked + .slider:before {
@@ -170,16 +177,62 @@ main
 {
     position: absolute;
 
-    top: 50px;
+    top: 70px;
     bottom: 0;
 
     width: 100%;
 }
 
-main object
+#terminal
 {
-    width: 100%;
+    position: fixed;
+
+    padding-left: 10px;
+    width: calc(100% - 10px);
     height: 100%;
 
+    z-index: 1;
+    top: 70px;
+    left: -100%;
+
+    transition: .4s;
     user-select: none;
+    background-color: #111111;
+}
+
+ul
+{
+    display: inline-block;
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    list-style: none;
+    background-color: var(--main-nav-color);
+}
+
+li
+{
+    float: left;
+
+    text-align: center;
+    background-color: var(--main-nav-color);
+    color: var(--main-text-color);
+}
+
+li a
+{
+    display: block;
+    padding: 10px;
+    width: 150px;
+
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+li a:hover
+{
+    background-color: var(--second-hd-color);
+    color: var(--second-text-color);
 }

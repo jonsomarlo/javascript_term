@@ -5,6 +5,7 @@
         <title>J'sITE</title>
         <link href="favicon.png" rel="icon" type="image/png" />
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     </head>
     <body>
         <header>
@@ -34,14 +35,13 @@
                     Terminal
                 </label>
                 <label class="switch">
-                    <input type="checkbox" id="checkBox">
+                    <input type="checkbox" id="checkBox" onclick="myFunction()">
                     <span class="slider round"></span>
                 </label>
             </div>
         </header>
-
         <main>
-            <object id="terminal" type="text/html" data="terminal/main.html"></object>
+            <object id="terminal" style="display:none" type="text/html" data="terminal/main.html"></object>
             <div id="website">
                 <div class="nav-bar">
                     <ul>
@@ -52,6 +52,28 @@
                 </div>
             </div>
         </main>
-        <script type="text/javascript" src="js/checkbox.js"></script>
+        <script>
+            function myFunction() {
+                var body = document.getElementsByTagName("BODY")[0];
+                var checkBox = document.getElementById("checkBox");
+                var term = document.getElementById("terminal");
+                var site = document.getElementById("website");
+                if (checkBox.checked == true){
+                    site.style.display = "none";
+                    term.style.display = "block";
+                    body.style.setProperty('--main-hd-color', "GhostWhite");
+                    // body.style.setProperty('--second-hd-color', "LightGray");
+                    body.style.setProperty('--main-text-color', "#222222");
+                    // body.style.setProperty('--second-text-color', "LightGray");
+                } else {
+                    term.style.display = "none";
+                    site.style.display = "block";
+                    body.style.setProperty('--main-hd-color', "#222222");
+                    // body.style.setProperty('--second-hd-color', "LightGray");
+                    body.style.setProperty('--main-text-color', "GhostWhite");
+                    body.style.setProperty('--second-text-color', "LightGray");
+                }
+            }
+        </script>
     </body>
 </html>
