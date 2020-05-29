@@ -1,0 +1,183 @@
+
+body
+{
+    --main-bg-color: LightSeaGreen; /* white;*/
+    --second-bg-color: LightGray;
+
+    --main-hd-color: white; /* white;*/
+    --second-hd-color: LightGray;
+
+    --main-sel-color: LightSeaGreen;
+    --second-sel-color: LightGray;
+
+    background-color: var(--main-bg-color);
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+header
+{
+    background-color: var(--main-hd-color);
+
+    display: block;
+
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 50px;
+
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#header
+{
+    float: left;
+    display: flex;
+
+    height: 100%;
+
+    text-decoration: none;
+}
+
+#logo
+{
+    float: left;
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+#title
+{
+    float: left;
+    display: block;
+
+    margin-left: 10px;
+
+    font-family:monospace;
+}
+
+#title #name
+{
+    color: DarkSlateGray;
+    font-size: 30px;
+}
+
+#title #position
+{
+    color: LightSeaGreen;
+    font-size: 10px;
+}
+
+#mode
+{
+    float: right;
+    display: flex;
+
+    height: 100%;
+
+    font-family:monospace;
+    vertical-align: middle;
+}
+
+#mode .text
+{
+    float: right;
+    margin: 15px;
+    margin-right: 0;
+}
+
+.switch
+{
+    float: right;
+    display: inline-block;
+    position: relative;
+
+    width: 38px;
+    height: 18px;
+    margin: 15px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: var(--second-hd-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+
+    content: "";
+    background-color: var(--main-hd-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--main-sel-color);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 9px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+main
+{
+    position: absolute;
+
+    top: 50px;
+    bottom: 0;
+    
+    width: 100%;
+}
+
+object
+{
+    width: 100%;
+    height: 100%;
+
+    user-select: none;
+}

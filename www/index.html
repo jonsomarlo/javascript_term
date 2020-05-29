@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>J'sITE</title>
+        <link href="favicon.png" rel="icon" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a id="header" href="">
+                <div id="logo">
+                    <img src="logo.png"/>
+                </div>
+                <div id="title">
+                    <div id="name">JUAN MARTÍNEZ ALONSO</div>
+                    <div id="position">Informático Junior</div>
+                </div>
+            </a>
+            <div id="mode">
+                <label class="text">
+                    Terminal
+                </label>
+                <label class="switch">
+                    <input type="checkbox" id="checkBox" onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+        <main>
+            <object id="terminal" style="display:none" type="text/html" data="terminal/main.html"></object>
+            <object id="website" style="display:block" type="text/html" data="website/main.html"></object>
+        </main>
+        <script>
+            function myFunction() {
+                var checkBox = document.getElementById("checkBox");
+                var term = document.getElementById("terminal");
+                var site = document.getElementById("website");
+                if (checkBox.checked == true){
+                    term.style.display = "block";
+                    site.style.display = "none";
+                } else {
+                    term.style.display = "none";
+                    site.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
