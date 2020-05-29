@@ -1,17 +1,17 @@
 
 body
 {
-    --main-hd-color: #222222; /* white;*/
+    --main-hd-color: #151515;
     --second-hd-color: LightGray;
 
-    --main-nav-color: #222222; /* white;*/
+    --main-tit-color: GhostWhite;
+    --second-tit-color: #151515;
+
+    --main-nav-color: #151515;
     --second-nav-color: white;
 
     --main-text-color: GhostWhite;
     --second-text-color: #222222;
-
-    --main-tit-color: GhostWhite;
-    --second-tit-color: #222222;
 
     display: block;
 
@@ -19,7 +19,13 @@ body
     height: 100%;
     margin: 0;
 
-    background-color: #444444;
+    background-color: #222222;
+    -ms-overflow-style: none;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header
@@ -203,7 +209,10 @@ main
 
 #net-nav
 {
-    position: fixed;
+    position: absolute;
+    display: inline-block;
+
+    top: 0px;
 
     padding: 0;
     margin: 0;
@@ -212,7 +221,6 @@ main
     width: 100%;
 
     list-style: none;
-    /* background-color: var(--main-nav-color); */
 }
 
 #net-nav li
@@ -223,20 +231,58 @@ main
 #net-nav li a
 {
     float: right;
-    display: block;
 
     margin: 10px 10px;
-    padding: 5px 10px;
 
     text-decoration: none;
     font-family:monospace;
     background-color: var(--second-nav-color);
     color: var(--second-text-color);
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
-figure
+#net-nav figure
 {
+    position: relative;
+    display: inline;
+
     margin: 0;
     padding: 0;
+}
+
+#net-nav svg
+{
+    float: right;
+
+    margin: 7px;
+    padding: 0;
+
+    width: 20px;
+    height: 20px;
+}
+
+#net-nav svg * {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-nav-color);
+}
+
+#net-nav span
+{
+    display: block;
+    float: right;
+
+    margin-top: 10px;
+    width: 0;
+
+    transition: .2s;
+    word-break: keep-all;
+    opacity: 0;
+}
+
+#net-nav a:hover span
+{
+    margin-left: 10px;
+    width: 70px;
+    opacity: 1;
 }
