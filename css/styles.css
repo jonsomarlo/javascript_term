@@ -1,16 +1,11 @@
 
 body
 {
-    --main-bg-color: LightSeaGreen; /* white;*/
-    --second-bg-color: LightGray;
-
-    --main-hd-color: white; /* white;*/
+    --main-hd-color: Grey; /* white;*/
     --second-hd-color: LightGray;
 
-    --main-sel-color: LightSeaGreen;
-    --second-sel-color: LightGray;
-
-    background-color: var(--main-bg-color);
+    --main-text-color: GhostWhite;
+    --second-text-color: LightGray;
 
     display: block;
 
@@ -73,13 +68,13 @@ img
 
 #title #name
 {
-    color: DarkSlateGray;
+    color:  var(--main-text-color);
     font-size: 30px;
 }
 
 #title #position
 {
-    color: LightSeaGreen;
+    color:  var(--main-text-color);
     font-size: 10px;
 }
 
@@ -96,7 +91,10 @@ img
 
 #mode .text
 {
+    color:  var(--main-text-color);
+
     float: right;
+
     margin: 15px;
     margin-right: 0;
 }
@@ -147,7 +145,7 @@ img
 }
 
 input:checked + .slider {
-    background-color: var(--main-sel-color);
+    background-color: var(--main-text-color);
 }
 
 input:checked + .slider:before {
@@ -170,7 +168,7 @@ main
 
     top: 50px;
     bottom: 0;
-    
+
     width: 100%;
 }
 

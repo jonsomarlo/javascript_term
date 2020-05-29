@@ -34,15 +34,24 @@
         </main>
         <script>
             function myFunction() {
+                var body = document.getElementsByTagName("BODY")[0];
                 var checkBox = document.getElementById("checkBox");
                 var term = document.getElementById("terminal");
                 var site = document.getElementById("website");
                 if (checkBox.checked == true){
-                    term.style.display = "block";
                     site.style.display = "none";
+                    term.style.display = "block";
+                    body.style.setProperty('--main-hd-color', "GhostWhite");
+                    // body.style.setProperty('--second-hd-color', "LightGray");
+                    body.style.setProperty('--main-text-color', "Grey");
+                    // body.style.setProperty('--second-text-color', "LightGray");
                 } else {
                     term.style.display = "none";
                     site.style.display = "block";
+                    body.style.setProperty('--main-hd-color', "Grey");
+                    // body.style.setProperty('--second-hd-color', "LightGray");
+                    body.style.setProperty('--main-text-color', "GhostWhite");
+                    body.style.setProperty('--second-text-color', "LightGray");
                 }
             }
         </script>
