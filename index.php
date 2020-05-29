@@ -1,1 +1,1 @@
-<?php include_once("www/terminal/terminal.html"); ?>
+<?php include_once("www/index.html"); ?>
