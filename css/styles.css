@@ -36,13 +36,16 @@ body
     margin: 0;
 
     background-color: #202020;
+}
+
+html
+{
+    scroll-behavior: smooth;
     -ms-overflow-style: none;
-
+    scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
+body::-webkit-scrollbar { display: none;}
 
 header
 {
@@ -58,8 +61,6 @@ header
     z-index: 3;
 
     background-color: var(--main-hd-color);
-    -webkit-transition: .2s;
-    transition: .2s;
 
 }
 
@@ -78,12 +79,16 @@ header
 {
     float: left;
     position: relative;
+
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
 }
 
 #logo svg
 {
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     margin: 5px;
 }
 
@@ -91,7 +96,7 @@ header
 {
     width: 100%;
     height: 100%;
-    fill: var(--main-tit-color-aw);
+    fill: var(--main-tit-color);
 }
 
 
@@ -100,7 +105,7 @@ header
     float: left;
     display: block;
 
-    margin-left: 5px;
+    margin-left: 25px;
 
     font-family: var(--font);
     color:  var(--main-tit-color);
@@ -223,12 +228,13 @@ main
 
     padding-left: 10px;
     width: calc(100% - 10px);
-    height: 100%;
+    height: calc(100% - 70px);
 
     z-index: 2;
     top: 70px;
     left: -100%;
 
+    -webkit-transition: .4s;
     transition: .4s;
     user-select: none;
     background-color: #111111;
@@ -302,6 +308,7 @@ main
     margin-top: 3px;
     width: 0;
 
+    -webkit-transition: .2s;
     transition: .2s;
     word-break: keep-all;
     overflow: hidden;
@@ -321,7 +328,7 @@ main
     display: absolute;
 
     min-height: 300px;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 110px);
 
     width: 100%;
 }
@@ -362,8 +369,56 @@ main
 
 #website .content
 {
-    display: block;
+    display: absolute;
 
     width: 100%;
-    background-color: green;
+
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+#website .content > div
+{
+    height: 100%;
+    width: 100%;
+
+    font-family: var(--font);
+    font-weight: bold;
+}
+
+#website .content .title
+{
+    padding: 30px;
+
+    font-size: 20px
+}
+
+#website .content img
+{
+    padding: 0;
+    margin: 0;
+
+    height: 15px;
+    width: 15px;
+}
+
+#contact
+{
+    background-color: Plum;
+}
+
+#about-me
+{
+    background-color: Wheat;
+}
+
+#projects
+{
+    background-color: LightBlue;
+}
+
+#footer
+{
+    color: var(--main-text-color);
+    min-height: 700px;
 }

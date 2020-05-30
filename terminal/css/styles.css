@@ -6,10 +6,20 @@
     color: white;
 }
 
+html
+{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar { display: none;}
+
 body
 {
     background-color: #111111;
     margin: 0;
+    padding-bottom: 10px;
 }
 
 div
