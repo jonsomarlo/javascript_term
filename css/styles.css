@@ -6,7 +6,7 @@
 
 }
 
-body
+html
 {
     --opacity: 0;
 
@@ -28,6 +28,15 @@ body
 
     --font: Personal;
 
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar { display: none;}
+
+body
+{
     display: block;
 
     width: 100%;
@@ -37,15 +46,6 @@ body
 
     background-color: #202020;
 }
-
-html
-{
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-body::-webkit-scrollbar { display: none;}
 
 header
 {
@@ -61,7 +61,8 @@ header
     z-index: 3;
 
     background-color: var(--main-hd-color);
-
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 #header
@@ -369,28 +370,30 @@ main
 
 #website .content
 {
-    display: absolute;
-
-    width: 100%;
-
     -webkit-transition: .2s;
     transition: .2s;
 }
 
 #website .content > div
 {
+    padding: 20px;
+
     height: 100%;
-    width: 100%;
 
     font-family: var(--font);
-    font-weight: bold;
 }
 
 #website .content .title
 {
     padding: 30px;
 
-    font-size: 20px
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#website .content .header>.title
+{
+    text-align: center;
 }
 
 #website .content img
@@ -400,11 +403,46 @@ main
 
     height: 15px;
     width: 15px;
+
+    transform: rotate(90deg);
 }
 
-#contact
+#website .bold
 {
-    background-color: Plum;
+    font-weight: bold;
+}
+
+#website .grid
+{
+    display: grid;
+
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-auto-rows: 100px;
+}
+
+#website .box
+{
+    padding: 20px;
+
+    background-color: white;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+#website .box .subtitle
+{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#website .box .text
+{
+    width: 100%;
+
+    font-size: 16px;
+    text-align: center;
 }
 
 #about-me
@@ -420,5 +458,23 @@ main
 #footer
 {
     color: var(--main-text-color);
-    min-height: 700px;
+}
+
+table
+{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+td, tr
+{
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+td:first-child
+{
+    text-align: right;
+    padding-left: 0;
 }
