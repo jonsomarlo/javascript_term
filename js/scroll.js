@@ -33,3 +33,13 @@ function scroll() {
 scroll();
 window.onscroll = function(){scroll()};
 window.addEventListener("resize", scroll);
+
+var intro = document.getElementById("intro")
+intro.getElementsByClassName('title')[0].style.opacity = "1";
+intro.getElementsByClassName('subtitle')[0].style.opacity = "1";
+
+var arrows = intro.getElementsByClassName('arrows')[0];
+var arrow = arrows.getElementsByClassName('arrow')[0];
+arrows.getElementsByClassName('arrow')[0].onclick = function() { window.scrollTo(0,window.innerHeight-60) };
+
+setInterval(function(){arrows.style.opacity = "1"},2000);

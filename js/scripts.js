@@ -26,10 +26,6 @@ myLink.onclick = function() {
     }
 }
 
-var intro = document.getElementById("intro")
-intro.getElementsByClassName('title')[0].style.opacity = "1";
-intro.getElementsByClassName('subtitle')[0].style.opacity = "1";
-
 var flexs =  document.getElementsByClassName('flex');
 function flexcolumns() {
     let i = window.innerWidth-200-(window.innerWidth-200)%130;
