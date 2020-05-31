@@ -390,6 +390,7 @@ main
 
     font-size: 20px;
     font-weight: bold;
+    color: var(--text-title);
 }
 
 #website .content .header
@@ -511,12 +512,13 @@ main
 
 #about-me
 {
-    --text-bold: red;
+    --text-bold: Brown;
+    --text-title: white;
     --window-color: white;
 
     display: block;
 
-    background-color: Wheat;
+    background-color: Brown;
     color: var(--second-text-color);
 }
 
@@ -528,6 +530,7 @@ main
 #programing
 {
     --text-bold: var(--main-text-color);
+    --text-title: white;
     --window-color: none;
 
     display: block;
@@ -539,12 +542,13 @@ main
 
 #projects
 {
-    --text-bold: blue;
+    --text-bold: Peru;
+    --text-title: white;
     --window-color: white;
 
     display: block;
 
-    background-color: LightBlue;
+    background-color: Peru;
     color: var(--second-text-color);
 }
 
@@ -556,6 +560,7 @@ main
 #footer
 {
     color: var(--main-text-color);
+    --text-title: white;
     --text-bold: var(--main-text-color);
 }
 
