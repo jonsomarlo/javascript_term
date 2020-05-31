@@ -40,6 +40,10 @@ intro.getElementsByClassName('subtitle')[0].style.opacity = "1";
 
 var arrows = intro.getElementsByClassName('arrows')[0];
 var arrow = arrows.getElementsByClassName('arrow')[0];
-arrows.getElementsByClassName('arrow')[0].onclick = function() { window.scrollTo(0,window.innerHeight-60) };
+arrows.getElementsByClassName('arrow')[0].onclick = function() {
+    html.style.setProperty('--opacity',opacity);
+    html.style.setProperty('--opacity',opacity);
+    window.scrollTo(0,window.innerHeight-20)
+};
 
 setInterval(function(){arrows.style.opacity = "1"},2000);

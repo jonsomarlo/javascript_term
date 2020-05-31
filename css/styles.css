@@ -2,7 +2,7 @@
 @font-face
 {
     font-family: Personal;
-    src: url(../media/font.otf) format("opentype");
+    src: url(../media/font2.otf) format("opentype");
 
 }
 
@@ -424,7 +424,7 @@ main
 
 #website .content .title
 {
-    padding: 30px;
+    padding: 50px;
 
     font-size: 20px;
     font-weight: bold;
@@ -454,7 +454,7 @@ main
     transform: rotate(90deg);
 }
 
-#website .bold
+.bold
 {
     font-weight: bold;
 }
@@ -531,6 +531,7 @@ main
 #website .flex .subtitle
 {
     margin-bottom: 5px;
+    font-weight: normal;
 }
 
 #website .flex svg
@@ -621,11 +622,24 @@ td, tr
 td:first-child
 {
     text-align: right;
-    padding-left: 0;
+    padding-left: 90px;
 }
 
 td:last-child
 {
     text-align: left;
     padding-left: 20px;
+}
+
+footer
+{
+    display: block;
+
+    padding: 30px 50px;
+    width: calc(100% - 100px);
+
+    font-size: 12px;
+    font-family: var(--font);
+    text-align: right;
+    color: var(--main-text-color);
 }
