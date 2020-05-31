@@ -20,8 +20,8 @@ html
     --second-tit-color: rgba(21, 21, 21,var(--opacity));
     --second-tit-color-aw: rgba(21, 21, 21, 1);
 
-    --main-nav-color: #151515;
-    --second-nav-color: white;
+    --main-nav-color: rgba(248, 248, 255, 1);
+    --second-nav-color: rgba(21, 21, 21, 1);
 
     --main-text-color: #f8f8ff;
     --second-text-color: #222222;
@@ -315,6 +315,7 @@ main
     overflow: hidden;
     font-weight: bold;
     opacity: 0;
+    color: var(--main-nav-color);
 }
 
 #net-nav a:hover span
@@ -353,6 +354,9 @@ main
     font-family: var(--font);
     font-weight: bold;
     font-size: 30px;
+    opacity: 0;
+    -webkit-transition: 4s;
+    transition: 4s;
 }
 
 #intro .subtitle
@@ -366,12 +370,9 @@ main
     text-align: center;
     font-family: var(--font);
     font-size: 20px;
-}
-
-#website .content
-{
-    -webkit-transition: .2s;
-    transition: .2s;
+    opacity: 0;
+    -webkit-transition: 6s;
+    transition: 6s;
 }
 
 #website .content > div
@@ -389,6 +390,13 @@ main
 
     font-size: 20px;
     font-weight: bold;
+}
+
+#website .content .header
+{
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 #website .content .header>.title
@@ -416,22 +424,34 @@ main
 {
     display: grid;
 
-    grid-gap: 25px;
+    grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-    grid-auto-rows: 100px;
-}
+    grid-auto-rows: 0px;
 
-#website .box
-{
-    padding: 20px;
-
-    background-color: white;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
 
+#website .element
+{
+    display: block;
+    padding: 5px;
+
+    opacity: 0;
+    background-color: var(--window-color);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#website .box
+{
+    padding: 15px;
+}
+
 #website .box .subtitle
 {
+    margin-bottom: 20px;
+
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -439,37 +459,119 @@ main
 
 #website .box .text
 {
-    width: 100%;
-
     font-size: 16px;
     text-align: center;
+    overflow: hidden;
+}
+
+#website .center
+{
+    position: relative;
+    display: flex;
+
+    padding-right: 20px;
+    width: calc(100% -40px);
+
+    justify-content: center;
+    align-content: center;
+}
+
+#website .flex
+{
+    display: inline-block;
+    width: 260px;
+    margin: auto;
+}
+
+#website .flex .element
+{
+    float: left;
+    width: 120px;
+}
+
+#website .flex .subtitle
+{
+    margin-bottom: 5px;
+}
+
+#website .flex svg
+{
+    width: 40px;
+    height: 40px;
+
+    margin: 5px;
+}
+
+#website .flex .svg *
+{
+    width: 100%;
+    height: 100%;
+    fill: var(--main-tit-color-aw);
 }
 
 #about-me
 {
+    --text-bold: red;
+    --window-color: white;
+
+    display: block;
+
     background-color: Wheat;
+    color: var(--second-text-color);
+}
+
+#about-me .grid
+{
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+}
+
+#programing
+{
+    --text-bold: var(--main-text-color);
+    --window-color: none;
+
+    display: block;
+    width: 100%;
+
+    background-color: none;
+    color: var(--main-text-color);
 }
 
 #projects
 {
+    --text-bold: blue;
+    --window-color: white;
+
+    display: block;
+
     background-color: LightBlue;
+    color: var(--second-text-color);
+}
+
+#projects .grid
+{
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
 }
 
 #footer
 {
     color: var(--main-text-color);
+    --text-bold: var(--main-text-color);
+}
+
+#website .text .cbold
+{
+    color: var(--text-bold);
+    font-weight: bold;
 }
 
 table
 {
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
 }
 
 td, tr
 {
-    padding-left: 50px;
     padding-bottom: 10px;
 }
 
@@ -477,4 +579,10 @@ td:first-child
 {
     text-align: right;
     padding-left: 0;
+}
+
+td:last-child
+{
+    text-align: left;
+    padding-left: 20px;
 }

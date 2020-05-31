@@ -1,6 +1,5 @@
 var myLink = document.getElementById('checkBox');
 var body = document.getElementsByTagName("BODY")[0];
-var intro = document.getElementById("net-nav");
 
 myLink.onclick = function() {
     var checkBox = document.getElementById("checkBox");
@@ -26,3 +25,23 @@ myLink.onclick = function() {
         html.style.setProperty('--main-tit-color-aw', "rgba(248, 248, 255, 1);");
     }
 }
+
+var intro = document.getElementById("intro")
+intro.getElementsByClassName('title')[0].style.opacity = "1";
+intro.getElementsByClassName('subtitle')[0].style.opacity = "1";
+
+var flexs =  document.getElementsByClassName('flex');
+function flexcolumns() {
+    let i = window.innerWidth-200-(window.innerWidth-200)%130;
+
+    for(x=0;x<flexs.length;x++){
+        let j = flexs[x].childElementCount*130;
+        let min = Math.min(i,j);
+
+        let s = min+"px";
+        flexs[x].style.width = s;
+    }
+}
+
+window.addEventListener("resize", flexcolumns);
+flexcolumns();
