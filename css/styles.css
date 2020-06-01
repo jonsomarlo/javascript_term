@@ -481,7 +481,7 @@ main
 
 #website .box .subtitle
 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     font-size: 15px;
     font-weight: bold;
@@ -654,4 +654,110 @@ footer
     margin-left: 4px;
 
     object-fit: cover;
+}
+
+.pdf
+{
+    display: block;
+
+    margin: 20px 0 20px 20px;
+
+    width: 80px;
+    height: 80px;
+
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-bold);
+}
+
+.pdf svg
+{
+    width: 50px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+
+.pdf svg *
+{
+    fill: var(--text-bold);
+}
+
+#website .subtitleimage
+{
+    height: 100px;
+
+    overflow: hidden;
+}
+
+#website .subtitletext
+{
+    position: relative;
+    display: inline;
+
+    top: -60px;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+}
+
+#website .subtitle img
+{
+    position: relative;
+
+    top: -150px;
+    width: 100%;
+
+    object-fit: cover;
+    filter: contrast(150%) brightness(30%);
+}
+
+.galery
+{
+    display: inline;
+    padding-left: 20px;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.galery .small
+{
+    margin: 1%;
+
+    width: 22%;
+
+    cursor: pointer;
+    filter: brightness(40%);
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.galery #zoomed
+{
+    margin: 1%;
+
+    width: 97%;
+}
+
+.galery .small:hover
+{
+    filter: brightness(100%);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  display: none;
+  z-index: 1;
 }

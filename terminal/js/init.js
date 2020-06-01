@@ -157,7 +157,6 @@ window.addEventListener("keydown", function (e) {
     }
 });
 
-/* TECLAS INDIVIDUALES ======================================================*/
 window.addEventListener("keydown", function (event) {
     if (event.defaultPrevented) {
         return;

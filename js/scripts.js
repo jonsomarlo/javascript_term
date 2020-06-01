@@ -41,3 +41,8 @@ function flexcolumns() {
 
 window.addEventListener("resize", flexcolumns);
 flexcolumns();
+
+var zoom = document.getElementById('zoomed');
+function galery(imgs) {
+    zoom.src = imgs.src;
+}
