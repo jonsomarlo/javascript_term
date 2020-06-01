@@ -54,7 +54,7 @@ if ( detectMob() ) {
     newLine("<span class=\"intro\">"+('       .:" @@@@       @"".        '+    "  WELCOME TO MY SITE:").replace(/ /g,'\xa0')+"</span>");
     newLine("<span class=\"intro\">"+('     ."    @@ \\@      /@  "       '+   " ").replace(/ /g,'\xa0')+"</span>");
     newLine("<span class=\"intro\">"+('    :      @@ @@     @@@@   -     '+    "  If you do not have a high knowledge of computers,").replace(/ /g,'\xa0')+"</span>");
-    newLine("<span class=\"intro\">"+('   /       @@ \\@    @@ @@    \\    '+  "  please call an computer expert. If this computer").replace(/ /g,'\xa0')+"</span>");
+    newLine("<span class=\"intro\">"+('   /       @@ \\@    @@ @@    \\    '+  "  please call a computer expert. If this computer").replace(/ /g,'\xa0')+"</span>");
     newLine("<span class=\"intro\">"+('  :        |@\\ @@   /@ @@     .   '+   "  expert for some reason does not know how to use a").replace(/ /g,'\xa0')+"</span>");
     newLine("<span class=\"intro\">"+('  ·         @@  @  @@  @      ·   '+    "  Linux command line, I would like to introduce my-").replace(/ /g,'\xa0')+"</span>");
     newLine("<span class=\"intro\">"+('  :         ¡@@@@@@@@@:.      :   '+    "  self to fill the vacancy of this \"computer expert\".").replace(/ /g,'\xa0')+"</span>");
