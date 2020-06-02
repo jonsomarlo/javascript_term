@@ -822,3 +822,32 @@ footer
 {
     background-color: RebeccaPurple;
 }
+
+#back
+{
+    float: left;
+
+    margin: 7px;
+
+    width: 23px;
+    height: 23px;
+
+    opacity: 0;
+    background-color: #202020;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#back img
+{
+    margin-top: 1px;
+
+    width: 19px;
+    height: 19px;
+
+
+    transform: rotate(180deg);
+    cursor: pointer;
+}

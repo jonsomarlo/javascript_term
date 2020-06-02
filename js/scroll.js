@@ -1,6 +1,7 @@
 var html = document.getElementsByTagName("HTML")[0];
 var boxes = document.getElementsByClassName("element");
 var titles = document.getElementsByClassName("header");
+var back = document.getElementById("back")
 var opacity = 0;
 
 function scroll() {
@@ -10,9 +11,10 @@ function scroll() {
     ypos = window.pageYOffset;
 
     if (ymid > ypos)
-        opacity = 0
+        opacity = 0;
 
     html.style.setProperty('--opacity',opacity);
+    back.style.opacity = (window.innerHeight-70)<window.pageYOffset ? 1 : 0;
 
     for(x=0;x<boxes.length;x++){
         let position = boxes[x].getBoundingClientRect();
@@ -43,7 +45,7 @@ var arrow = arrows.getElementsByClassName('arrow')[0];
 arrows.getElementsByClassName('arrow')[0].onclick = function() {
     html.style.setProperty('--opacity',opacity);
     html.style.setProperty('--opacity',opacity);
-    window.scrollTo(0,window.innerHeight-20)
+    window.scrollTo(0,window.innerHeight-20);
 };
 
 setInterval(function(){arrows.style.opacity = "1"},2000);
