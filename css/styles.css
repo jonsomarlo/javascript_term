@@ -787,11 +787,12 @@ footer
 {
     float: left;
 
-    margin: 2px;
+    margin: 5px;
     margin-right: 5px;
     padding: 3px 10px;
 
     text-decoration: none;
+    font-size: 10px;
     border-radius: 20px;
     color: var(--main-nav-color);
     filter: brightness(150%);
@@ -815,4 +816,9 @@ footer
 #website .links .python
 {
     background-color: Olive;
+}
+
+#website .links .c
+{
+    background-color: RebeccaPurple;
 }
