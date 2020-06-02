@@ -722,6 +722,7 @@ footer
     padding-left: 20px;
     width: 500px;
     margin: 20px auto;
+    margin-bottom: 10px;
 }
 
 .galery .small
@@ -760,4 +761,58 @@ footer
   margin: auto;
   display: none;
   z-index: 1;
+}
+
+#website .links
+{
+    display: inline-block;
+
+    margin-top: 10px;
+    width: 100%;
+}
+
+#website .links a
+{
+    float: right;
+
+    padding: 5px 20px;
+
+    text-decoration: none;
+    border-radius: 20px;
+    color: var(--main-nav-color);
+    background-color: var(--second-nav-color);
+}
+
+#website .links span
+{
+    float: left;
+
+    margin: 2px;
+    margin-right: 5px;
+    padding: 3px 10px;
+
+    text-decoration: none;
+    border-radius: 20px;
+    color: var(--main-nav-color);
+    filter: brightness(150%);
+}
+
+#website .links .html
+{
+    background-color: SteelBlue;
+}
+
+#website .links .css
+{
+    background-color: FireBrick;
+}
+
+#website .links .js
+{
+    background-color: Chocolate;
+}
+
+#website .links .python
+{
+    background-color: Olive;
 }
