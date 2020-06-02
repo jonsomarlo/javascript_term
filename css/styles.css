@@ -340,7 +340,7 @@ main
 
 #intro .float
 {
-    padding-top: calc(100vh / 4);
+    padding-top: calc(100vh / 2 - 150px);
 }
 
 #intro .title

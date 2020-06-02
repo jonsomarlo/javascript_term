@@ -29,11 +29,11 @@ myLink.onclick = function() {
 var flexs =  document.getElementsByClassName('flex');
 function flexcolumns() {
     let i = window.innerWidth-200-(window.innerWidth-200)%130;
-
+    let max = 130*10
     for(x=0;x<flexs.length;x++){
         let j = flexs[x].childElementCount*130;
         let min = Math.min(i,j);
-
+        min = Math.min(min,max);
         let s = min+"px";
         flexs[x].style.width = s;
     }
